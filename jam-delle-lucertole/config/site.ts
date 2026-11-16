@@ -45,8 +45,8 @@ export const siteConfig = {
   description:
     "La Jam delle Lucertole è la serata in cui il palco è di tutti: iscriviti in scaletta dal telefono, scegli il tuo pezzo e suona dal vivo. La scaletta si aggiorna in tempo reale.",
   /** Nome del locale / luogo */
-  venue: "Circolo La Lucertola",
-  city: "Catania",
+  venue: "Circolo Delle Lucertole",
+  city: "Barcellona Pozzo di Gotto",
   /** Quando si suona */
   scheduleLabel: "Giovedì · ore 21:30 · ingresso libero",
 
