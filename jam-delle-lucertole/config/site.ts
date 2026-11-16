@@ -53,12 +53,10 @@ export const siteConfig = {
   /* ------------------------------------------------------------------ regole */
   rulesTitle: "Le regole della serata",
   rules: [
-    "Un brano a testa per volta: dopo aver suonato torni in coda, non salti la fila.",
+    "Al massimo 5 pezzi per formazione, con precedenza agli inediti .",
     "Prenota dal telefono: la scaletta è live, così la regia sa sempre chi c'è.",
-    "Niente playback: si suona dal vivo, anche se è la prima volta che lo fai.",
-    "Batteria, basso e amplificatori sono sul palco: chiedi in regia prima di usarli.",
-    "La regia chiama due nomi prima del tuo: resta vicino al palco e fatti trovare.",
-    "Io e te suoniamo, il locale ci ascolta: volume gentile e sorriso obbligatorio.",
+    "Batteria, microfonie amplificatori sono sul palco: portare i propri strumenti personali, le bacchette ed i piatti della batteria.",
+    "La regia chiama il nome prima del tuo: resta vicino al palco e fatti trovare.",
   ],
   rulesFootnote:
     "Non ti senti pronto? Vieni ad ascoltare: la prossima settimana il palco è ancora tuo.",
@@ -69,11 +67,11 @@ export const siteConfig = {
     email: "ciao@lajamdellelucertole.it",
   },
   /** Testo del footer */
-  footerNote: "Fatta con le mani sporche di polvere e tanta voglia di suonare.",
+  footerNote: "Tanta voglia di suonare.",
 
   /* ------------------------------------------------------------ regia / admin */
   /** PIN numerico della regia (default). In produzione usa la env ADMIN_PIN. */
-  adminPin: "1234",
+  adminPin: "6666",
   adminLabel: "Regia / Admin",
 
   /* --------------------------------------------------------------- prenotazioni */
