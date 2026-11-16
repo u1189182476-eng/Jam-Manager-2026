@@ -63,8 +63,8 @@ export const siteConfig = {
 
   /* ---------------------------------------------------------------- contatti */
   contacts: {
-    instagram: "@lajamdellelucertole",
-    email: "ciao@lajamdellelucertole.it",
+    instagram: "@il_circolo_delle_lucertole",
+    email: "",
   },
   /** Testo del footer */
   footerNote: "Tanta voglia di suonare.",
