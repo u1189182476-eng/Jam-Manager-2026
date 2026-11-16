@@ -40,7 +40,7 @@ export const siteConfig = {
   subtitle:
     "Jam session dal vivo: prenota il tuo brano, sali sul palco, suona con chi c'è.",
   /** Riga "occhiello" sopra al titolo nell'hero */
-  kicker: "Open jam · Live club · Ogni giovedì",
+  kicker: "Open jam ",
   /** Descrizione lunga (hero + meta description SEO) */
   description:
     "La Jam delle Lucertole è la serata in cui il palco è di tutti: iscriviti in scaletta dal telefono, scegli il tuo pezzo e suona dal vivo. La scaletta si aggiorna in tempo reale.",
