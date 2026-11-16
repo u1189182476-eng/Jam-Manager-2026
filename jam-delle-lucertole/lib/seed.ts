@@ -1,0 +1,140 @@
+import type { StoredSlot } from "@/lib/types";
+
+/**
+ * Dati di esempio caricati SOLO quando non c'è nessun database configurato
+ * (modalità memoria) oppure al primo avvio su un database Redis vuoto.
+ * Servono a far vedere subito com'è la scaletta: puoi svuotarla dalla Regia.
+ */
+export function seedSlots(): StoredSlot[] {
+  const now = Date.now();
+  const minutes = (m: number) => now - m * 60_000;
+
+  const base = {
+    instrument: "chitarra-elettrica",
+    createdAt: now,
+    updatedAt: now,
+  };
+
+  return [
+    {
+      id: "seed-1",
+      name: "Marta Russo",
+      instrument: "voce",
+      song: "Proud Mary",
+      artist: "Creedence Clearwater Revival",
+      songKey: "Re maggiore",
+      members: [
+        { name: "Gigi Barrera", instrument: "Basso" },
+        { name: "Nino Sarta", instrument: "Batteria" },
+        { name: "Elio Cunsolo", instrument: "Chitarra Elettrica" },
+      ],
+      status: "onstage",
+      order: 0,
+      createdAt: minutes(95),
+      updatedAt: minutes(3),
+      ownerToken: "seed-token-1",
+    },
+    {
+      id: "seed-2",
+      name: "Sergio Lo Verde",
+      instrument: "chitarra-acustica",
+      song: "Wish You Were Here",
+      artist: "Pink Floyd",
+      songKey: "Sol maggiore",
+      members: [{ name: "Anna Puglisi", instrument: "Voce" }],
+      status: "waiting",
+      order: 1,
+      createdAt: minutes(84),
+      updatedAt: minutes(84),
+      ownerToken: "seed-token-2",
+    },
+    {
+      id: "seed-3",
+      name: "Rosaria Ciraldo",
+      instrument: "tastiere",
+      song: "Feeling Good",
+      artist: "Nina Simone",
+      songKey: "La minore",
+      members: [],
+      status: "waiting",
+      order: 2,
+      createdAt: minutes(72),
+      updatedAt: minutes(72),
+      ownerToken: "seed-token-3",
+    },
+    {
+      id: "seed-4",
+      name: "Turi Macrì",
+      instrument: "basso",
+      song: "Another One Bites the Dust",
+      artist: "Queen",
+      songKey: "La minore",
+      members: [
+        { name: "Paolo Fiume", instrument: "Batteria" },
+        { name: "Marta Russo", instrument: "Voce" },
+      ],
+      status: "waiting",
+      order: 3,
+      createdAt: minutes(66),
+      updatedAt: minutes(66),
+      ownerToken: "seed-token-4",
+    },
+    {
+      id: "seed-5",
+      name: "Dario Platania",
+      instrument: "batteria",
+      song: "Superstition",
+      artist: "Stevie Wonder",
+      songKey: "Mi bemolle minore",
+      members: [{ name: "Zia Lina", instrument: "Tastiere / Piano" }],
+      status: "waiting",
+      order: 4,
+      createdAt: minutes(41),
+      updatedAt: minutes(41),
+      ownerToken: "seed-token-5",
+    },
+    {
+      id: "seed-6",
+      name: "Sofia Nicosia",
+      instrument: "fiati",
+      song: "Moondance",
+      artist: "Van Morrison",
+      songKey: "La minore",
+      members: [],
+      status: "waiting",
+      order: 5,
+      createdAt: minutes(18),
+      updatedAt: minutes(18),
+      ownerToken: "seed-token-6",
+    },
+    {
+      id: "seed-7",
+      name: "Andrea Strano",
+      instrument: "altro",
+      instrumentDetail: "Armonica a bocca",
+      song: "Sweet Home Chicago",
+      artist: "Blues Brothers",
+      songKey: "Mi maggiore",
+      members: [{ name: "Piero Vaccaro", instrument: "Chitarra Acustica" }],
+      status: "played",
+      order: 6,
+      createdAt: minutes(140),
+      updatedAt: minutes(110),
+      ownerToken: "seed-token-7",
+    },
+    {
+      id: "seed-8",
+      name: "Carmelo Ferro",
+      ...base,
+      song: "Smells Like Teen Spirit",
+      artist: "Nirvana",
+      songKey: "Fa minore",
+      members: [{ name: "Alice Motta", instrument: "Batteria" }],
+      status: "played",
+      order: 7,
+      createdAt: minutes(150),
+      updatedAt: minutes(125),
+      ownerToken: "seed-token-8",
+    },
+  ];
+}
