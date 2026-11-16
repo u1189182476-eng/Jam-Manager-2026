@@ -48,7 +48,7 @@ export const siteConfig = {
   venue: "Circolo Delle Lucertole",
   city: "Barcellona Pozzo di Gotto",
   /** Quando si suona */
-  scheduleLabel: "Giovedì · ore 21:30 · ingresso libero",
+  scheduleLabel: "Sabato · ore 21:00",
 
   /* ------------------------------------------------------------------ regole */
   rulesTitle: "Le regole della serata",
